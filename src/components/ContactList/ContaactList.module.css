@@ -21,6 +21,10 @@
   margin: 20px auto;
 }
 
+.totalContacts {
+  color: rgba(128, 128, 128, 0.689);
+  font-weight: 500;
+}
 .name {
   margin-right: 20px;
   width: 150px;

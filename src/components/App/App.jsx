@@ -8,10 +8,11 @@ function App() {
   const { contacts } = useSelector(state => state.contacts);
   return (
     <>
+      <h1 className={s.title}>Phone Book</h1>
       <DoForm />
-      <Filter />
+
+      {contacts.length > 1 && <Filter />}
       <ContactList />
-      <p className={s.totalContacts}>Total contacts {contacts.length}</p>
     </>
   );
 }

@@ -1,14 +1,14 @@
 import s from './DoForm.module.css';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContactAction } from 'strore/contacts/action';
+import { addContactAction } from 'strore/contacts/contactSlice';
 const { useState } = require('react');
+
 function DoForm() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
   const { contacts } = useSelector(state => state.contacts);
-
   const addContact = contact => {
     contacts.some(el => el.name.includes(contact.name))
       ? alert('This contact is already in the list ')

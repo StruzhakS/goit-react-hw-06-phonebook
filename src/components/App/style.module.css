@@ -8,6 +8,10 @@
   display: felx;
 }
 
+.title {
+  margin-bottom: 40px;
+}
+
 .totalContacts {
   color: rgba(128, 128, 128, 0.689);
   font-weight: 500;
