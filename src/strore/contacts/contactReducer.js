@@ -1,5 +1,5 @@
 import initialState from './initialState';
-import { ADD, DELETE, DELETE_ALL, FILTER } from './types';
+import { ADD, DELETE, FILTER } from './types';
 
 const contactReducer = (state = initialState, { type, payload }) => {
   switch (type) {
